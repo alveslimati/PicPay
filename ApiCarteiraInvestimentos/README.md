@@ -18,7 +18,7 @@ Bem-vindo ao projeto **ApiCarteiraInvestimentos**! Este projeto é uma API RESTf
 
 ### Certifique-se de ter os seguintes programas e ferramentas instalados no ambiente de desenvolvimento:
 
-| - **.NET 6.0 SDK ou superior** [(Download aqui)](https://dotnet.microsoft.com/download) |
+| - **.NET 8.0 SDK ou superior** [(Download aqui)](https://dotnet.microsoft.com/download) |
 |---|
 
 
