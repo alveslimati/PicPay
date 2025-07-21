@@ -16,31 +16,45 @@ namespace ApiCarteiraInvestimentos.Controllers
         }
 
         [HttpPost]
-        public ActionResult CriarCarteira([FromBody] CarteiraModel novaCarteira)
+        public async Task<IActionResult> CriarCarteira([FromBody] CarteiraModel novaCarteira)
         {
-            if (novaCarteira == null || string.IsNullOrEmpty(novaCarteira.ClienteId))
-                return BadRequest(new { mensagem = "Dados da carteira inválidos." });
+            if (novaCarteira == null)
+                return BadRequest(new { mensagem = "A carteira não pode ser nula." });
 
-            var idCarteira = _carteiraService.CriarCarteira(novaCarteira);
+            if (string.IsNullOrWhiteSpace(novaCarteira.ClienteId))
+                return BadRequest(new { mensagem = "O ID do cliente é obrigatório." });
 
-            return Ok(new
+            try
             {
-                mensagem = "Carteira criada com sucesso.",
-                idCarteira
-            });
+                var idCarteira = await _carteiraService.CriarCarteiraAsync(novaCarteira);
+
+                return Ok(new
+                {
+                    mensagem = "Carteira criada com sucesso.",
+                    idCarteira
+                });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { mensagem = ex.Message });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new { mensagem = "Ocorreu um erro ao criar a carteira." });
+            }
         }
-        // Novo método: GET /carteiras/{clienteId}
+
         [HttpGet("{clienteId}")]
-        public ActionResult ConsultarCarteira(string clienteId)
+        public async Task<IActionResult> ConsultarCarteira(string clienteId)
         {
-            var carteira = _carteiraService.ObterCarteiraPorClienteId(clienteId);
+            var carteira = await _carteiraService.ObterCarteiraPorClienteIdAsync(clienteId);
 
             if (carteira == null)
             {
                 return NotFound(new { mensagem = "Cliente não encontrado ou sem carteira." });
             }
 
-            var valorTotal = _carteiraService.CalcularValorTotalCarteira(carteira);
+            var valorTotal = await _carteiraService.CalcularValorTotalCarteiraAsync(carteira);
 
             var response = new CarteiraModel
             {

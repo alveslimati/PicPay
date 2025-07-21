@@ -3,11 +3,11 @@ using ApiCarteiraInvestimentos.Mocks;
 
 namespace ApiCarteiraInvestimentos.Repositories
 {
-    public class AtivoRepository: IAtivoRepository
+    public class AtivoRepository : IAtivoRepository
     {
-        public List<AtivoModel> ListarAtivos()
+        public async Task<List<AtivoModel>> ListarAtivosAsync()
         {
-            return AtivosMock.GetAtivos();
+            return await Task.FromResult(AtivosMock.GetAtivos());
         }
     }
 }

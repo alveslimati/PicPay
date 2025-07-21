@@ -64,7 +64,7 @@ Inicie o servidor para rodar a API na sua máquina:
 dotnet run --project ApiCarteiraInvestimentos
 ```
 
-Por padrão, a aplicação estará acessível na URL: **http://localhost:5240**/index.html.
+Por padrão, a aplicação estará acessível na URL: **http://localhost:5240**/
 
 ---
 

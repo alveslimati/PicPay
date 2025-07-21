@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EfHtoLoHXSc=",
+  "dgSpecHash": "0MV3dRt7e08=",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
+  "projectFilePath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alves\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\alves\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
@@ -28,7 +28,10 @@
     "C:\\Users\\alves\\.nuget\\packages\\xunit.core\\2.9.2\\xunit.core.2.9.2.nupkg.sha512",
     "C:\\Users\\alves\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
     "C:\\Users\\alves\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "C:\\Users\\alves\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+    "C:\\Users\\alves\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512",
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }

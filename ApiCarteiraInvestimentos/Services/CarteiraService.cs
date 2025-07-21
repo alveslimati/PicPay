@@ -13,25 +13,45 @@ namespace ApiCarteiraInvestimentos.Services
             _carteiraRepository = carteiraRepository;
             _ativoRepository = ativoRepository;
         }
-        public virtual CarteiraModel? ObterCarteiraPorClienteId(string clienteId)
+
+        public async Task<CarteiraModel?> ObterCarteiraPorClienteIdAsync(string clienteId)
         {
             if (string.IsNullOrEmpty(clienteId))
                 throw new ArgumentException("O ID do cliente não pode ser nulo ou vazio.", nameof(clienteId));
 
-            return _carteiraRepository.ObterCarteiraPorClienteId(clienteId);
+            return await _carteiraRepository.ObterCarteiraPorClienteIdAsync(clienteId);
         }
-        public string CriarCarteira(CarteiraModel carteira)
+
+        public async Task<string> CriarCarteiraAsync(CarteiraModel carteira)
         {
             if (carteira == null)
                 throw new ArgumentNullException(nameof(carteira), "Carteira não pode ser nula.");
-            if (carteira.Ativos == null || !carteira.Ativos.Any())
-                throw new ArgumentException("A carteira deve conter pelo menos um ativo.", nameof(carteira.Ativos));
 
-            return _carteiraRepository.CriarCarteira(carteira);
+            if (string.IsNullOrWhiteSpace(carteira.ClienteId))
+                throw new ArgumentException("O ID do cliente é obrigatório.", nameof(carteira.ClienteId));
+
+            if (carteira.Ativos == null)
+                carteira.Ativos = new List<AtivoCarteiraModel>();
+
+            foreach (var ativo in carteira.Ativos)
+            {
+                if (ativo.Quantidade <= 0)
+                {
+                    throw new ArgumentException($"A quantidade do ativo '{ativo.Codigo}' deve ser maior que zero.", nameof(carteira.Ativos));
+                }
+
+                if (string.IsNullOrWhiteSpace(ativo.Codigo))
+                {
+                    throw new ArgumentException("O ativo deve ter um código válido.", nameof(carteira.Ativos));
+                }
+            }
+            carteira.ValorTotal = 0;
+            return await _carteiraRepository.CriarCarteiraAsync(carteira);
         }
-        public decimal CalcularValorTotalCarteira(CarteiraModel carteira)
+
+        public async Task<decimal> CalcularValorTotalCarteiraAsync(CarteiraModel carteira)
         {
-            var ativosMock = _ativoRepository.ListarAtivos();
+            var ativosMock = await _ativoRepository.ListarAtivosAsync();
 
             return carteira.Ativos.Sum(ativoCarteira =>
             {

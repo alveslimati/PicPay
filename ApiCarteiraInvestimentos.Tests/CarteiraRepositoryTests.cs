@@ -7,9 +7,9 @@ namespace ApiCarteiraInvestimentos.Tests
     public class CarteiraRepositoryTests
     {
         [Fact]
-        public void DeveAdicionarCarteiraAoMockCorretamente()
+        public async Task DeveAdicionarCarteiraAoMockCorretamenteAsync()
         {
-            // Arrasnge
+            // Arrange
             var repository = new CarteiraRepository();
             var novaCarteira = new CarteiraModel
             {
@@ -21,7 +21,7 @@ namespace ApiCarteiraInvestimentos.Tests
             };
 
             // Act
-            var idCarteira = repository.CriarCarteira(novaCarteira);
+            var idCarteira = await repository.CriarCarteiraAsync(novaCarteira);
 
             // Assert
             Assert.NotNull(idCarteira);

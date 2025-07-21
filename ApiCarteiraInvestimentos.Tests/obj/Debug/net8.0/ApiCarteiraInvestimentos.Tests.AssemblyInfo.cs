@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiCarteiraInvestimentos.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb50d1ada0fcb303297a293f2a898ff7783f715c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiCarteiraInvestimentos.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiCarteiraInvestimentos.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj": {}
+    "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj": {}
   },
   "projects": {
-    "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj": {
+    "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
+        "projectUniqueName": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
         "projectName": "ApiCarteiraInvestimentos.Tests",
-        "projectPath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
+        "projectPath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\ApiCarteiraInvestimentos.Tests.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos.Tests\\obj\\",
+        "outputPath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj": {
-                "projectPath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj"
+              "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj": {
+                "projectPath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj"
               }
             }
           }
@@ -86,37 +80,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj": {
+    "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj",
+        "projectUniqueName": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj",
         "projectName": "ApiCarteiraInvestimentos",
-        "projectPath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj",
+        "projectPath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\ApiCarteiraInvestimentos.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\PicPay\\ApiCarteiraInvestimentos\\obj\\",
+        "outputPath": "D:\\Projetos\\Vagas\\Picpay\\PicPay\\ApiCarteiraInvestimentos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -161,6 +163,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -169,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

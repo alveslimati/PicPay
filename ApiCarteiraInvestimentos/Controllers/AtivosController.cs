@@ -12,10 +12,10 @@ namespace ApiCarteiraInvestimentos.Controllers
         public AtivosController() => _ativoService = new AtivoService();
 
         [HttpGet]
-        public ActionResult<List<AtivoModel>> ListarAtivos()
+        public async Task<IActionResult> ListarAtivos()
         {
-            var ativos = _ativoService.ObterAtivos();
-            
+            var ativos = await _ativoService.ObterAtivosAsync(); 
+
             return Ok(ativos);
         }
     }

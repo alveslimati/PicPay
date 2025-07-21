@@ -4,7 +4,7 @@ namespace ApiCarteiraInvestimentos.Repositories
 {
     public interface ICarteiraRepository
     {
-        CarteiraModel? ObterCarteiraPorClienteId(string clienteId);
-        string CriarCarteira(CarteiraModel carteira);
+        Task<CarteiraModel?> ObterCarteiraPorClienteIdAsync(string clienteId);
+        Task<string> CriarCarteiraAsync(CarteiraModel carteira);
     }
 }

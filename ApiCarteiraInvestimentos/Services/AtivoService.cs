@@ -7,14 +7,14 @@ namespace ApiCarteiraInvestimentos.Services
     {
         private readonly AtivoRepository _ativoRepository;
 
-        public AtivoService()
+        public AtivoService()                                                                                       
         {
             _ativoRepository = new AtivoRepository();
         }
 
-        public List<AtivoModel> ObterAtivos()
+        public async Task<List<AtivoModel>> ObterAtivosAsync()
         {
-            return _ativoRepository.ListarAtivos();
+            return await _ativoRepository.ListarAtivosAsync();
         }
     }
 }
