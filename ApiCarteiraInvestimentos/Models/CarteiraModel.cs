@@ -1,4 +1,5 @@
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Text.Json.Serialization;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiCarteiraInvestimentos.Models
 {
@@ -10,7 +11,8 @@ namespace ApiCarteiraInvestimentos.Models
 
     public required List<AtivoCarteiraModel> Ativos { get; set; }
 
-    [BindNever]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)] 
+    [SwaggerSchema(ReadOnly = true)] 
     public decimal ValorTotal { get; set; }
 }
 
