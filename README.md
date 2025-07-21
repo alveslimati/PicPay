@@ -202,6 +202,6 @@ Passed!
    Os dados de exemplo estão disponíveis em **`CarteiraMock`**, usados para simular persistência.
 
 3. **Escalabilidade:** 
-   O projeto foi organizado em camadas para facilitar a adição de novas funcionalidades, como endpoints adicionais ou persistência real no banco de dados.
+   O projeto foi organizado em camadas para facilitar a adição de novas funcionalidades, feito de forma assíncrona, seno possível seguir um padrão para endpoints adicionais ou persistência real no banco de dados.
 
 ---
